@@ -1,7 +1,7 @@
 #ifndef __MACROS_H
 #define __MACROS_H
 
-#include <NvInfer.h>
+//#include <NvInfer.h>
 
 #ifdef API_EXPORTS
 #if defined(_MSC_VER)

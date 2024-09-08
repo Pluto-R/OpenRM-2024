@@ -4,13 +4,13 @@
 #include <fstream>
 #include <unistd.h>
 
-using namespace nvinfer1;
-using namespace nvonnxparser;
+//using namespace nvinfer1;
+//using namespace nvonnxparser;
 
 bool rm::initTrtOnnx(
     const std::string& onnx_file,
     const std::string& engine_file,
-    IExecutionContext** context,
+    //IExecutionContext** context,
     unsigned int batch_size
 ) {
     try {
@@ -20,89 +20,89 @@ bool rm::initTrtOnnx(
         }
 
         // 创建 TensorRT 构建器
-        Logger logger;
-        auto infer_builder = createInferBuilder(logger);
-        if (!infer_builder) {
-            throw std::runtime_error("Failed to create TensorRT builder.");
-        }
+        //Logger logger;
+        //auto infer_builder = createInferBuilder(logger);
+        //if (!infer_builder) {
+        //    throw std::runtime_error("Failed to create TensorRT builder.");
+        //}
 
         // 使用显式批处理
-        const auto explicit_batch = 1U
-            << static_cast<uint32_t>(NetworkDefinitionCreationFlag::kEXPLICIT_BATCH);
+        //const auto explicit_batch = 1U
+        //    << static_cast<uint32_t>(NetworkDefinitionCreationFlag::kEXPLICIT_BATCH);
 
         // 创建网络对象，设置批处理大小
-        auto network = infer_builder->createNetworkV2(explicit_batch | batch_size);
-        if (!network) {
-            throw std::runtime_error("Failed to create TensorRT network.");
-        }
+        //auto network = infer_builder->createNetworkV2(explicit_batch | batch_size);
+        //if (!network) {
+        //    throw std::runtime_error("Failed to create TensorRT network.");
+        //}
 
         // 创建ONNX解析器, 解析ONNX模型
-        auto parser = nvonnxparser::createParser(*network, logger);
-        if (!parser) {
-            throw std::runtime_error("Failed to create ONNX parser.");
-        }
+        //auto parser = nvonnxparser::createParser(*network, logger);
+        //if (!parser) {
+        //    throw std::runtime_error("Failed to create ONNX parser.");
+        //}
 
-        if (!parser->parseFromFile(onnx_file.c_str(), static_cast<int>(ILogger::Severity::kINFO))) {
-            throw std::runtime_error("Failed to parse ONNX model.");
-        }
+        //if (!parser->parseFromFile(onnx_file.c_str(), static_cast<int>(ILogger::Severity::kINFO))) {
+        //    throw std::runtime_error("Failed to parse ONNX model.");
+        //}
 
-        // 创建推理引擎
-        auto config = infer_builder->createBuilderConfig();
-        if (!config) {
-            throw std::runtime_error("Failed to create TensorRT builder config.");
-        }
-        if (infer_builder->platformHasFastFp16()) {
-            config->setFlag(BuilderFlag::kFP16);
-        }
+        //// 创建推理引擎
+        //auto config = infer_builder->createBuilderConfig();
+        //if (!config) {
+        //    throw std::runtime_error("Failed to create TensorRT builder config.");
+        //}
+        //if (infer_builder->platformHasFastFp16()) {
+        //    config->setFlag(BuilderFlag::kFP16);
+        //}
 
-        // 创建推理引擎
-        auto engine = infer_builder->buildEngineWithConfig(*network, *config);
-        if (!engine) {
-            throw std::runtime_error("Failed to build TensorRT engine.");
-        }
+        //// 创建推理引擎
+        //auto engine = infer_builder->buildEngineWithConfig(*network, *config);
+        //if (!engine) {
+        //    throw std::runtime_error("Failed to build TensorRT engine.");
+        //}
 
         // 创建推理上下文
-        *context = engine->createExecutionContext();
-        if (!(*context)) {
-            throw std::runtime_error("Failed to create TensorRT execution context.");
-        }
+        //*context = engine->createExecutionContext();
+        //if (!(*context)) {
+        //    throw std::runtime_error("Failed to create TensorRT execution context.");
+        //}
 
         // 保存推理引擎到文件
-        std::ofstream file(engine_file, std::ios::binary);
-        if (!file) {
-            throw std::runtime_error("Failed to open engine file for writing.");
-        }
-        file.write(
-            reinterpret_cast<const char*>(engine->serialize()->data()),
-            engine->serialize()->size()
-        );
-        file.close();
+        //std::ofstream file(engine_file, std::ios::binary);
+        //if (!file) {
+        //    throw std::runtime_error("Failed to open engine file for writing.");
+        //}
+        //file.write(
+        //    reinterpret_cast<const char*>(engine->serialize()->data()),
+        //    engine->serialize()->size()
+        //);
+        //file.close();
 
-        // 释放资源
-        parser->destroy();
-        network->destroy();
-        infer_builder->destroy();
-        config->destroy();
-        engine->destroy();
+        //// 释放资源
+        //parser->destroy();
+        ////network->destroy();
+        //infer_builder->destroy();
+        //config->destroy();
+        //engine->destroy();
 
-        rm::message("TensorRT ONNX model parsed and engine built", rm::MSG_OK);
-        return true; 
+        //rm::message("TensorRT ONNX model parsed and engine built", rm::MSG_OK);
+        //return true;
 
     } catch (const std::exception& e) {
-        std::string error_message = e.what();
-        rm::message("TensoRT ONNX : " + error_message, rm::MSG_ERROR);
+        //std::string error_message = e.what();
+        //rm::message("TensoRT ONNX : " + error_message, rm::MSG_ERROR);
 
-        if (*context) {
-            (*context)->destroy();
-        }
+        //if (*context) {
+        //    (*context)->destroy();
+        //}
 
         return false;
     }
 }
 
 bool rm::initTrtEngine(
-    const std::string& engine_file,
-    nvinfer1::IExecutionContext** context
+    const std::string& engine_file
+    //nvinfer1::IExecutionContext** context
 ) {
     try {
         // 检查引擎文件是否存在
@@ -126,101 +126,101 @@ bool rm::initTrtEngine(
         file.close();
 
         // 创建 TensorRT 运行时
-        Logger logger;
-        auto runtime = createInferRuntime(logger);
-        if (!runtime) {
-            throw std::runtime_error("Failed to create TensorRT runtime.");
-        }
+        //Logger logger;
+        //auto runtime = createInferRuntime(logger);
+        //if (!runtime) {
+        //    throw std::runtime_error("Failed to create TensorRT runtime.");
+        //}
 
-        // 反序列化引擎
-        auto engine = runtime->deserializeCudaEngine(serialized_engine, size, nullptr);
-        if (!engine) {
-            throw std::runtime_error("Failed to deserialize TensorRT engine.");
-        }
+        //// 反序列化引擎
+        //auto engine = runtime->deserializeCudaEngine(serialized_engine, size, nullptr);
+        //if (!engine) {
+        //    throw std::runtime_error("Failed to deserialize TensorRT engine.");
+        //}
 
         // 创建推理上下文
-        *context = engine->createExecutionContext();
-        if (!(*context)) {
-            throw std::runtime_error("Failed to create TensorRT execution context.");
-        }
+        //*context = engine->createExecutionContext();
+        //if (!(*context)) {
+        //    throw std::runtime_error("Failed to create TensorRT execution context.");
+        //}
 
-        // 释放资源
-        delete[] serialized_engine;
-        rm::message("TensorRT Engine OK", rm::MSG_OK);
-        return true;
+        //// 释放资源
+        //delete[] serialized_engine;
+        //rm::message("TensorRT Engine OK", rm::MSG_OK);
+        //return true;
 
     } catch (const std::exception& e) {
-        std::string error_message = e.what();
-        rm::message("TensoRT Engine : " + error_message, rm::MSG_ERROR);
-        if (*context) {
-            (*context)->destroy();
-        }
-        return false;
+        //std::string error_message = e.what();
+        //rm::message("TensoRT Engine : " + error_message, rm::MSG_ERROR);
+        //if (*context) {
+        //    (*context)->destroy();
+        //}
+				return false;
     }
 }
 
 bool rm::initCudaStream(
-    cudaStream_t* stream
+    //cudaStream_t* stream
 ) {
-    try {
-        // 创建CUDA流
-        cudaSetDevice(0);
-        cudaStreamCreate(stream);
-        rm::message("CUDA Stream created", rm::MSG_OK);
-        return true;
+    //try {
+    //    // 创建CUDA流
+    //    cudaSetDevice(0);
+    //    cudaStreamCreate(stream);
+    //    rm::message("CUDA Stream created", rm::MSG_OK);
+    //    return true;
 
-    } catch (const std::exception& e) {
-        std::string error_message = e.what();
-        rm::message("CUDA Stream : " + error_message, rm::MSG_ERROR);
-        return false;
-    }
+    //} catch (const std::exception& e) {
+    //    std::string error_message = e.what();
+    //    rm::message("CUDA Stream : " + error_message, rm::MSG_ERROR);
+    //    return false;
+    //}
 }
 
 void rm::detectEnqueue(
     float* input_device_buffer,
-    float* output_device_buffer,
-    nvinfer1::IExecutionContext** context,
-    cudaStream_t* stream
+    float* output_device_buffer
+    //nvinfer1::IExecutionContext** context,
+    //cudaStream_t* stream
 ) {
     float* device_buffer[2];
     device_buffer[0] = input_device_buffer;
     device_buffer[1] = output_device_buffer;
-    (*context)->enqueueV2((void**)device_buffer, *stream, nullptr);
+    //(*context)->enqueueV2((void**)device_buffer, *stream, nullptr);
 }
 
 void rm::detectOutput(
     float* output_host_buffer,
     const float* output_device_buffer,
-    cudaStream_t* stream,
+    //cudaStream_t* stream,
     size_t output_struct_size,
     int bboxes_num,
     int batch_size
 ) {
     size_t output_size = (output_struct_size * bboxes_num + 1) * batch_size;
-    cudaMemcpyAsync(
-        output_host_buffer,
-        output_device_buffer,
-        output_size,
-        cudaMemcpyDeviceToHost,
-        *stream
-    );
-    cudaStreamSynchronize(*stream);
+    //cudaMemcpyAsync(
+    //    output_host_buffer,
+    //    output_device_buffer,
+    //    output_size,
+    //    cudaMemcpyDeviceToHost,
+    //    *stream
+    //);
+    //cudaStreamSynchronize(*stream);
 }
 
 void rm::detectOutputClassify(
     float* output_host_buffer,
     const float* output_device_buffer,
-    cudaStream_t* stream,
+    //cudaStream_t* stream,
     int class_num
 ) {
-    cudaMemcpyAsync(
-        output_host_buffer,
-        output_device_buffer,
-        class_num * sizeof(float),
-        cudaMemcpyDeviceToHost,
-        *stream
-    );
-    cudaStreamSynchronize(*stream);
+    //cudaMemcpyAsync(
+    //    output_host_buffer,
+    //    output_device_buffer,
+    //    class_num * sizeof(float),
+    //    cudaMemcpyDeviceToHost,
+    //    *stream
+    //);
+    //cudaStreamSynchronize(*stream);
 }
 
 void rm::mallocYoloCameraBuffer(
@@ -231,8 +231,8 @@ void rm::mallocYoloCameraBuffer(
     int batch_size,
     int channels
 ) {
-    cudaMallocHost(reinterpret_cast<void**>(rgb_host_buffer), rgb_width * rgb_height * channels * batch_size * sizeof(uint8_t));
-    cudaMalloc(reinterpret_cast<void**>(rgb_device_buffer), rgb_width * rgb_height * channels * batch_size * sizeof(uint8_t));
+    //cudaMallocHost(reinterpret_cast<void**>(rgb_host_buffer), rgb_width * rgb_height * channels * batch_size * sizeof(uint8_t));
+    //cudaMalloc(reinterpret_cast<void**>(rgb_device_buffer), rgb_width * rgb_height * channels * batch_size * sizeof(uint8_t));
     rm::message("Yolo Camera Buffer allocated", rm::MSG_OK);
 }
 
@@ -247,9 +247,9 @@ void rm::mallocYoloDetectBuffer(
     int batch_size,
     int channels
 ) {
-    cudaMalloc(reinterpret_cast<void**>(input_device_buffer), input_width * input_height * channels * batch_size * sizeof(float));
-    cudaMalloc(reinterpret_cast<void**>(output_device_buffer), (output_struct_size * bboxes_num + 1) * batch_size);
-    cudaMallocHost(reinterpret_cast<void**>(output_host_buffer), (output_struct_size * bboxes_num + 1) * batch_size);
+    //cudaMalloc(reinterpret_cast<void**>(input_device_buffer), input_width * input_height * channels * batch_size * sizeof(float));
+    //cudaMalloc(reinterpret_cast<void**>(output_device_buffer), (output_struct_size * bboxes_num + 1) * batch_size);
+    //cudaMallocHost(reinterpret_cast<void**>(output_host_buffer), (output_struct_size * bboxes_num + 1) * batch_size);
     rm::message("Yolo Detect Buffer allocated", rm::MSG_OK);
 }
 
@@ -267,10 +267,10 @@ void rm::mallocClassifyBuffer(
     size_t input_size = input_num * sizeof(float);
     size_t output_size = class_num * sizeof(float);
 
-    cudaMallocHost(reinterpret_cast<void**>(input_host_buffer), input_size);
-    cudaMalloc(reinterpret_cast<void**>(input_device_buffer), input_size);
-    cudaMalloc(reinterpret_cast<void**>(output_device_buffer), output_size);
-    cudaMallocHost(reinterpret_cast<void**>(output_host_buffer), output_size);
+    //cudaMallocHost(reinterpret_cast<void**>(input_host_buffer), input_size);
+    //cudaMalloc(reinterpret_cast<void**>(input_device_buffer), input_size);
+    //cudaMalloc(reinterpret_cast<void**>(output_device_buffer), output_size);
+    //cudaMallocHost(reinterpret_cast<void**>(output_host_buffer), output_size);
     rm::message("Classify Buffer allocated", rm::MSG_OK);
 }
 
@@ -278,8 +278,8 @@ void rm::freeYoloCameraBuffer(
     uint8_t* rgb_host_buffer,
     uint8_t* rgb_device_buffer
 ) {
-    cudaFreeHost(rgb_host_buffer);
-    cudaFree(rgb_device_buffer);
+    //cudaFreeHost(rgb_host_buffer);
+    //cudaFree(rgb_device_buffer);
     rm::message("Yolo Camera Buffer free", rm::MSG_WARNING);
 }
 
@@ -288,9 +288,9 @@ void rm::freeYoloDetectBuffer(
     float* output_device_buffer,
     float* output_host_buffer
 ) {
-    cudaFree(input_device_buffer);
-    cudaFree(output_device_buffer);
-    cudaFreeHost(output_host_buffer);
+    //cudaFree(input_device_buffer);
+    //cudaFree(output_device_buffer);
+    //cudaFreeHost(output_host_buffer);
     rm::message("Yolo Detect Buffer freed", rm::MSG_WARNING);
 }
 
@@ -300,10 +300,10 @@ void rm::freeClassifyBuffer(
     float* output_device_buffer,
     float* output_host_buffer
 ) {
-    cudaFreeHost(input_host_buffer);
-    cudaFree(input_device_buffer);
-    cudaFree(output_device_buffer);
-    cudaFreeHost(output_host_buffer);
+    //cudaFreeHost(input_host_buffer);
+    //cudaFree(input_device_buffer);
+    //cudaFree(output_device_buffer);
+    //cudaFreeHost(output_host_buffer);
     rm::message("Classify Buffer freed", rm::MSG_WARNING);
 }
 
@@ -317,7 +317,7 @@ void rm::memcpyYoloCameraBuffer(
 ) {
     size_t rgb_size = rgb_width * rgb_height * channels * sizeof(uint8_t);
     memcpy(rgb_host_buffer, rgb_mat_data, rgb_size);
-    cudaMemcpy(rgb_device_buffer, rgb_host_buffer, rgb_size, cudaMemcpyHostToDevice);
+    //cudaMemcpy(rgb_device_buffer, rgb_host_buffer, rgb_size, cudaMemcpyHostToDevice);
 }
 
 void rm::memcpyClassifyBuffer(
@@ -343,5 +343,5 @@ void rm::memcpyClassifyBuffer(
             input_host_buffer[i] = static_cast<float>(mat_data[i]);
         }
     }
-    cudaMemcpy(input_device_buffer, input_host_buffer, input_size, cudaMemcpyHostToDevice); 
+    //cudaMemcpy(input_device_buffer, input_host_buffer, input_size, cudaMemcpyHostToDevice);
 }

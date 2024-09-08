@@ -1,4 +1,4 @@
-#include "resize.cuh"
+#include "resize.h"
 #include <algorithm>
 #include <cmath>
 

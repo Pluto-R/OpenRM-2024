@@ -6,10 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_compile_options(-O3 -w)
 
-# Cuda
-find_package(CUDA REQUIRED)
-include_directories(${CUDA_INCLUDE_DIRS})
-
 # OpenCV
 find_package(OpenCV 4.5.4 REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})

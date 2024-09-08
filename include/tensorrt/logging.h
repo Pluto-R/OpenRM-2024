@@ -17,7 +17,7 @@
 #ifndef TENSORRT_LOGGING_H
 #define TENSORRT_LOGGING_H
 
-#include "NvInferRuntimeCommon.h"
+//#include "NvInferRuntimeCommon.h"
 #include <cassert>
 #include <ctime>
 #include <iomanip>
@@ -25,7 +25,6 @@
 #include <ostream>
 #include <sstream>
 #include <string>
-
 #include "tensorrt/macros.h"
 
 using Severity = nvinfer1::ILogger::Severity;

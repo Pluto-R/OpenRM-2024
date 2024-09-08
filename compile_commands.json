@@ -1,0 +1,242 @@
+[
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/attack",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_attack_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_attack.dir/attack.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/attack.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/attack.cpp",
+  "output": "src/attack/CMakeFiles/openrm_attack.dir/attack.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/attack",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_attack_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_attack.dir/deadlocker.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/deadlocker.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/deadlocker.cpp",
+  "output": "src/attack/CMakeFiles/openrm_attack.dir/deadlocker.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/attack",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_attack_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_attack.dir/freshcenter.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/freshcenter.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/freshcenter.cpp",
+  "output": "src/attack/CMakeFiles/openrm_attack.dir/freshcenter.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/attack",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_attack_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_attack.dir/filtrate.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/filtrate.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/filtrate.cpp",
+  "output": "src/attack/CMakeFiles/openrm_attack.dir/filtrate.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/attack",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_attack_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_attack.dir/display.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/display.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/attack/display.cpp",
+  "output": "src/attack/CMakeFiles/openrm_attack.dir/display.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/antitopV3.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/antitopV3.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/antitopV3.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/antitopV3.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/outpostV1.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/outpostV1.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/outpostV1.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/outpostV1.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/outpostV2.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/outpostV2.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/outpostV2.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/outpostV2.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/runeV2.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/runeV2.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/runeV2.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/runeV2.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/trackqueueV3.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/trackqueueV3.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/trackqueueV3.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/trackqueueV3.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/trackqueueV4.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/trackqueueV4.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/trackqueueV4.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/trackqueueV4.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/kalman",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_kalman_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_kalman.dir/trajectoryV1.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/trajectoryV1.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/kalman/trajectoryV1.cpp",
+  "output": "src/kalman/CMakeFiles/openrm_kalman.dir/trajectoryV1.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/display.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/display.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/display.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/display.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/getter.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/getter.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/getter.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/getter.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/setter.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/setter.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/setter.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/setter.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/finder.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/finder.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/finder.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/finder.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/judge.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/judge.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/judge.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/judge.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/reprojection.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/reprojection.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/reprojection.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/reprojection.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/histogram.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/histogram.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/histogram.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/histogram.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/pointer",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_pointer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_pointer.dir/color.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/color.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/pointer/color.cpp",
+  "output": "src/pointer/CMakeFiles/openrm_pointer.dir/color.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/solver",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_solver_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_solver.dir/solvepnp.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/solver/solvepnp.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/solver/solvepnp.cpp",
+  "output": "src/solver/CMakeFiles/openrm_solver.dir/solvepnp.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/uniterm",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_uniterm_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_uniterm.dir/message.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/message.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/message.cpp",
+  "output": "src/uniterm/CMakeFiles/openrm_uniterm.dir/message.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/uniterm",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_uniterm_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_uniterm.dir/monitor.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/monitor.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/monitor.cpp",
+  "output": "src/uniterm/CMakeFiles/openrm_uniterm.dir/monitor.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/uniterm",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_uniterm_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_uniterm.dir/dashboard.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/dashboard.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/dashboard.cpp",
+  "output": "src/uniterm/CMakeFiles/openrm_uniterm.dir/dashboard.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/uniterm",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_uniterm_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_uniterm.dir/oscilloscope.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/oscilloscope.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/uniterm/oscilloscope.cpp",
+  "output": "src/uniterm/CMakeFiles/openrm_uniterm.dir/oscilloscope.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_delay_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_delay.dir/delay.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/delay.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/delay.cpp",
+  "output": "src/utils/CMakeFiles/openrm_delay.dir/delay.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_print_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_print.dir/print.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/print.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/print.cpp",
+  "output": "src/utils/CMakeFiles/openrm_print.dir/print.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_serial_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_serial.dir/serial.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/serial.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/serial.cpp",
+  "output": "src/utils/CMakeFiles/openrm_serial.dir/serial.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_tf_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_tf.dir/tf_rotate.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/tf_rotate.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/tf_rotate.cpp",
+  "output": "src/utils/CMakeFiles/openrm_tf.dir/tf_rotate.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_tf_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_tf.dir/tf_trans.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/tf_trans.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/tf_trans.cpp",
+  "output": "src/utils/CMakeFiles/openrm_tf.dir/tf_trans.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_tf_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_tf.dir/tf_tools.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/tf_tools.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/tf_tools.cpp",
+  "output": "src/utils/CMakeFiles/openrm_tf.dir/tf_tools.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/utils",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_timer_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_timer.dir/timer.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/timer.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/utils/timer.cpp",
+  "output": "src/utils/CMakeFiles/openrm_timer.dir/timer.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/video",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_video_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_video.dir/uvc.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/video/uvc.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/video/uvc.cpp",
+  "output": "src/video/CMakeFiles/openrm_video.dir/uvc.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/video",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_video_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_video.dir/tools.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/video/tools.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/video/tools.cpp",
+  "output": "src/video/CMakeFiles/openrm_video.dir/tools.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/tensorrt",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_tensorrt_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_tensorrt.dir/nms.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/tensorrt/nms.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/tensorrt/nms.cpp",
+  "output": "src/tensorrt/CMakeFiles/openrm_tensorrt.dir/nms.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/tensorrt",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_tensorrt_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_tensorrt.dir/nmsV5C36.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/tensorrt/nmsV5C36.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/tensorrt/nmsV5C36.cpp",
+  "output": "src/tensorrt/CMakeFiles/openrm_tensorrt.dir/nmsV5C36.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/src/tensorrt",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_tensorrt_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_tensorrt.dir/tensorrt.cpp.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/tensorrt/tensorrt.cpp",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/src/tensorrt/tensorrt.cpp",
+  "output": "src/tensorrt/CMakeFiles/openrm_tensorrt.dir/tensorrt.cpp.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/cuda",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_cudatools_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_cudatools.dir/src/resize/affine.cc.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/src/resize/affine.cc",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/src/resize/affine.cc",
+  "output": "cuda/CMakeFiles/openrm_cudatools.dir/src/resize/affine.cc.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/cuda",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_cudatools_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_cudatools.dir/src/resize/kernal.cc.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/src/resize/kernal.cc",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/src/resize/kernal.cc",
+  "output": "cuda/CMakeFiles/openrm_cudatools.dir/src/resize/kernal.cc.o"
+},
+{
+  "directory": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/build/cuda",
+  "command": "/usr/bin/g++ -DOPENRM_VERSION=\\\"1.0.0\\\" -Dopenrm_cudatools_EXPORTS -I/usr/include/opencv4 -I/usr/include/eigen3 -I/home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/include -O3 -DNDEBUG -std=gnu++20 -fPIC -O3 -w -o CMakeFiles/openrm_cudatools.dir/src/resize/resize.cc.o -c /home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/src/resize/resize.cc",
+  "file": "/home/zzlinus/dev/cpp/autoaim/OpenRM2024/cuda/src/resize/resize.cc",
+  "output": "cuda/CMakeFiles/openrm_cudatools.dir/src/resize/resize.cc.o"
+}
+]

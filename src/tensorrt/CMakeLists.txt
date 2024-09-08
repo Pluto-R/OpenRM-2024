@@ -18,10 +18,10 @@ target_include_directories(
 target_link_libraries(
     openrm_tensorrt
         PRIVATE
-        nvinfer
-        nvinfer_plugin
-        nvonnxparser
-        nvparsers
-        cudart
-        cublas
+        #nvinfer
+        #nvinfer_plugin
+        #nvonnxparser
+        #nvparsers
+        #cudart
+        #cublas
 )

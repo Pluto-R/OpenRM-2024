@@ -1,42 +1,42 @@
 #ifndef __OPENRM_TENSORRT_TENSORRT_H__
 #define __OPENRM_TENSORRT_TENSORRT_H__
 
-#include <NvInfer.h>
-#include <NvInferRuntime.h>
-#include <NvOnnxParser.h>
+//#include <NvInfer.h>
+//#include <NvInferRuntime.h>
+//#include <NvOnnxParser.h>
 #include <string>
 #include "structure/stamp.hpp"
-#include "tensorrt/logging.h"
+//#include "tensorrt/logging.h"
 
 namespace rm {
 
 bool initTrtOnnx(
     const std::string& onnx_file,
     const std::string& engine_file,
-    nvinfer1::IExecutionContext** context,
+    //nvinfer1::IExecutionContext** context,
     unsigned int batch_size = 1U
 );
 
 bool initTrtEngine(
-    const std::string& engine_file,
-    nvinfer1::IExecutionContext** context
+    const std::string& engine_file
+    //nvinfer1::IExecutionContext** context
 );
 
 bool initCudaStream(
-    cudaStream_t* stream
+    //cudaStream_t* stream
 );
 
 void detectEnqueue(
     float* input_device_buffer,
-    float* output_device_buffer,
-    nvinfer1::IExecutionContext** context,
-    cudaStream_t* stream
+    float* output_device_buffer
+    //nvinfer1::IExecutionContext** context,
+    //cudaStream_t* stream
 );
 
 void detectOutput(
     float* output_host_buffer,
     const float* output_device_buffer,
-    cudaStream_t* stream,
+    //cudaStream_t* stream,
     size_t output_struct_size,
     int bboxes_num,
     int batch_size = 1
@@ -45,7 +45,7 @@ void detectOutput(
 void detectOutputClassify(
     float* output_host_buffer,
     const float* output_device_buffer,
-    cudaStream_t* stream,
+    //cudaStream_t* stream,
     int class_num
 ); 
 

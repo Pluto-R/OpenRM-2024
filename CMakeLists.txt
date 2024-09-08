@@ -4,6 +4,8 @@ project(OpenRM)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # set(CMAKE_BUILD_TYPE DEBUG)
 # add_compile_options(-g -O0 -w -fno-omit-frame-pointer -Wno-notes)
 
@@ -22,12 +24,13 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 find_package(Ceres REQUIRED)
 include_directories(${CERES_INCLUDE_DIRS})
 
-# CUDA
-find_package(CUDA)
-if (CUDA_FOUND)
-    message(STATUS "CUDA Version: ${CUDA_VERSION}")
-    include_directories(/usr/local/cuda/include)
-endif()
+## CUDA
+#find_package(CUDA)
+#if (CUDA_FOUND)
+#    message(STATUS "CUDA Version: ${CUDA_VERSION}")
+#    include_directories(/usr/local/cuda/include)
+#endif()
+set(CUDA_FOUND 1)
 
 # 设置主版本号、次版本号和补丁版本号
 set(OPENRM_VERSION_MAJOR 1)
