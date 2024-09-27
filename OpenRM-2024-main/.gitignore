@@ -1,6 +1,0 @@
-build/
-**/build/
-demo/img/
-.cache/
-.vscode/
-.DS_Store
