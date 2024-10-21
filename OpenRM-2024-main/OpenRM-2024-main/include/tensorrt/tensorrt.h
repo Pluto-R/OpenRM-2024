@@ -1,54 +1,41 @@
 #ifndef __OPENRM_TENSORRT_TENSORRT_H__
 #define __OPENRM_TENSORRT_TENSORRT_H__
 
-//#include <NvInfer.h>
-//#include <NvInferRuntime.h>
-//#include <NvOnnxParser.h>
 #include <string>
+#include <vector>
+#include <openvino/openvino.hpp>
 #include "structure/stamp.hpp"
-//#include "tensorrt/logging.h"
 
 namespace rm {
-
-bool initTrtOnnx(
+//初始化 OpenVINO ONNX 模型 (ONNX模型文件的路径/生成的引擎文件的路径/批处理大小)
+bool initOpenVinoOnnx(
     const std::string& onnx_file,
     const std::string& engine_file,
-    //nvinfer1::IExecutionContext** context,
     unsigned int batch_size = 1U
 );
 
-bool initTrtEngine(
+//初始化 OpenVINO 引擎
+bool initOpenVinoEngine(
     const std::string& engine_file
-    //nvinfer1::IExecutionContext** context
 );
 
-bool initCudaStream(
-    //cudaStream_t* stream
-);
-
+//在推理请求中入队输入数据(infer_request OpenVINO的推理请求对象，用于管理推理过程。)
 void detectEnqueue(
-    float* input_device_buffer,
-    float* output_device_buffer
-    //nvinfer1::IExecutionContext** context,
-    //cudaStream_t* stream
+    float* input_data,
+    float* output_data,
+    ov::InferRequest& infer_request
 );
 
+//用于处理推理结果并将输出数据复制到主机缓冲区
 void detectOutput(
     float* output_host_buffer,
     const float* output_device_buffer,
-    //cudaStream_t* stream,
     size_t output_struct_size,
     int bboxes_num,
     int batch_size = 1
-); 
+);
 
-void detectOutputClassify(
-    float* output_host_buffer,
-    const float* output_device_buffer,
-    //cudaStream_t* stream,
-    int class_num
-); 
-
+//为相机图像分配内存缓冲区
 void mallocYoloCameraBuffer(
     uint8_t** rgb_host_buffer,
     uint8_t** rgb_device_buffer,
@@ -58,7 +45,7 @@ void mallocYoloCameraBuffer(
     int channels = 3
 );
 
-
+//为 YOLO 检测分配内存缓冲区
 void mallocYoloDetectBuffer(
     float** input_device_buffer,
     float** output_device_buffer,
@@ -71,22 +58,10 @@ void mallocYoloDetectBuffer(
     int channels = 3
 );
 
-void mallocClassifyBuffer(
-    float** input_host_buffer,
-    float** input_device_buffer,
-    float** output_device_buffer,
-    float** output_host_buffer,
-    int input_width,
-    int input_height,
-    int class_num,
-    int channels = 3
-);
-
 void freeYoloCameraBuffer(
     uint8_t* rgb_host_buffer,
     uint8_t* rgb_device_buffer
 );
-
 
 void freeYoloDetectBuffer(
     float* input_device_buffer,
@@ -94,13 +69,7 @@ void freeYoloDetectBuffer(
     float* output_host_buffer
 );
 
-void freeClassifyBuffer(
-    float* input_host_buffer,
-    float* input_device_buffer,
-    float* output_device_buffer,
-    float* output_host_buffer
-);
-
+//用于将相机数据复制到缓冲区
 void memcpyYoloCameraBuffer(
     uint8_t* rgb_mat_data,
     uint8_t* rgb_host_buffer,
