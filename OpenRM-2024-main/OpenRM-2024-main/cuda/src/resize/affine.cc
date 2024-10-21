@@ -50,30 +50,33 @@ AffineMatrix infer_to_input;
 
 //}
 
-// 用于生成仿射变换矩阵
+//根据两个中心点求旋转的角度
+float calculate_rotate_angle(const cv::Point2f& src_center,const cv::Point2f& dst_center)
+{
+    //两个中心点之间的向量
+    cv::Point2f vector = dst_center - src_center;
+    float angle = atan2(vector.y,vector.x) * 180 / CV_PI;
+    return angle;
 
+}
+
+// 用于生成仿射变换矩阵
 void generate_affine_matrix(int src_width, int src_height, int dst_width, int dst_height) {
 
     // 获取中心点
-
     cv::Point2f src_center(src_width * 0.5f, src_height * 0.5f);
-
     cv::Point2f dst_center(dst_width * 0.5f, dst_height * 0.5f);
 
     // 获取比例系数
-
-    float scale = static_cast<float>(dst_width) / src_width;  // 假设缩放比例在宽度和高度上相同
-
+    float scale_input = static_cast<float>(dst_width) / src_width;  // 假设缩放比例在宽度和高度上相同
+    float scale_infer = 1.0f / scale_input;
+    
     // 生成从 input 到 infer 的仿射变换矩阵
-
-    cv::Mat transform = cv::getRotationMatrix2D(dst_center, cv::rotated(src_center, dst_center), scale);
-
+    cv::Mat transform = cv::getRotationMatrix2D(dst_center, calculate_rotate_angle(src_center, dst_center), scale_infer);
     input_to_infer.matrix = transform;
 
-    // 生成从 infer 到 input 的仿射变换矩阵
-
-    transform = cv::getRotationMatrix2D(src_center, cv::rotated(dst_center, src_center), 1.0f / scale);
+    // 生成 
+    transform = cv::getRotationMatrix2D(src_center, calculate_rotate_angle(dst_center, src_center), scale_input);
 
     infer_to_input.matrix = transform;
-
 }

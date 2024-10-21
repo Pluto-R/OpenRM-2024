@@ -64,10 +64,8 @@
 
 //}
 
-void rm::resize(const int &src, int &dst, int dst_width, int dst_height)
-
+void rm::resize(const cv::Mat &src,cv::Mat &dst, int dst_width, int dst_height)
 {
-
     // 生成仿射变换矩阵
 
     generate_affine_matrix(src.cols, src.rows, dst_width, dst_height);

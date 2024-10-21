@@ -4,12 +4,15 @@
 
 //定义了一个名为AffineMatrix的结构体，用于存储仿射变换矩阵的6个参数
 struct AffineMatrix {
-    float value[6];
+    //float value[6];
     cv::Mat matrix;
 };
 
 extern AffineMatrix input_to_infer;
 extern AffineMatrix infer_to_input;
+
+//计算两个中心点角度
+float calculate_rotate_angle(const cv::Point2f& src_center,const cv::Point2f& dst_center);
 
 //用于生成仿射变换矩阵
 void generate_affine_matrix(int src_width, int src_height, int dst_width, int dst_height);
